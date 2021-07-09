@@ -19,6 +19,7 @@ import {
 
 import theme from './src/global/styles/theme';
 import { AppRoutes } from './src/routes/app.routes';
+import { SingIn } from './src/screens/SignIn';
 
 
 
@@ -35,10 +36,12 @@ export default function App() {
 
     return (
         <ThemeProvider theme={theme}>
-            <NavigationContainer>
-                <StatusBar barStyle='light-content' translucent backgroundColor={'transparent'} />
-                <AppRoutes />
-            </NavigationContainer>
+            {/* <NavigationContainer> */}
+            <StatusBar barStyle='light-content' translucent backgroundColor={'transparent'} />
+                {/* <AppRoutes /> */}
+            {/* </NavigationContainer> */}
+
+            <SingIn />
         </ThemeProvider>
     )
 }
